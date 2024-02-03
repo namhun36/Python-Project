@@ -52,7 +52,7 @@ age = int(input('나이를 입력하세요'))
 result = (10 < age) and (age < 18)
 if result:
     ls_text = '청소년 입니다'
-else 
+else:
     ls_text = '청소년이 아닙니다'
 
 print(ls_text)
