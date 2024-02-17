@@ -60,3 +60,39 @@ print(s)
 s = '       apple'
 s.lstrip()  # 왼쪽에 공백을 전부 지운다
 s.strip()   # 양쪽끝 공백들을 전부 지운다
+
+# 리스트 메소드 : 추가, 삽입, 삭제,
+li = [10, 20, 30]
+li.append(40)
+li.append(50)
+
+li.insert(1, 15)
+
+li.extend([10, 20])
+print(li)
+
+value = li.pop()    #
+print(value)
+
+li.remove(10)   # 리스트 내의 값을 지정하며 삭제한다
+li.clear() # 리슽트의 내용을 전부 지운다
+
+# 세트(SET) 메소드
+
+s1 = {10, 20, 30}
+s2 = set(20, 30, 40)
+
+# 교집합 s1 & s2
+s3 = s1.intersection(s2)
+print(s3)
+
+s1 & s2
+print(s3)
+
+# 합집합 s1 | s2
+s3 = s1.union(s2)
+s3 = s1 | s2
+
+# 차집합 s1 - s2
+s3 = s1.difference(s2)
+s3 = s1 - s2
