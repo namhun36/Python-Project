@@ -17,9 +17,30 @@ def show(*vals:int, horiz:int=1):
 
     print()
 
-def greet(message:str, temp: int, count:int=3):
+def greet(message:str, count:int=3):
     for n in range(count):
         print(message)
+
+def my_divmod(num1:int, num2:int):
+    mok = num1 / num2
+    nam = num1 % num2
+    return mok, nam
+
+mok, nam = my_divmod(10, 3)
+print(mok, nam)
+
+values = my_divmod(10, 3)
+print(values[0], values[1])
+
+
+
+# 다중 반환 함수
+# mok, nam = divmod(10, 3)
+# print(mok, nam)
+
+# values = divmod(10, 3) # 튜플로 반환한다
+# print(values)
+
 
 greet('안녕하세요', count=5)
 greet('반갑습니다')
